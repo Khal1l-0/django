@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/fonts/stylesheet.css' %}">
+    <title>{% block title %}
+        Contact
+    {% endblock  %}</title>
+</head>
+<body>
+    {% block content %}
+    <header class="home">
+        
+        <div class="container">
+            <div class="home-left">
+                <h1 class="home-title">Contact me</h1>
+                <form action="" class="home-form"  method='post'>
+                    {% csrf_token %}
+                    {{ form.name }}
+                    {{ form.email }}
+                    <button class="home-btn" type='submit'>Send</button>
+                </form>
+            </div>
+            
+            <div class="fuck-2">
+                <div class="home-right">
+                    <div class="home-info">
+                        <h2 class="home-right_title">Contact information</h2>
+                        <p class="geolocation"><i class="fa-sharp fa-solid fa-location-crosshairs"></i>: Uzbekistan</p>
+                        <a href="" class="phone-number">Call me: +999 99 618-2802</a>
+                    </div>
+                    <ul class="home-menu">
+                        <li>Follow me:</li>
+                        <li><a href="" class="home-menu_link"><i class="fa-brands fa-telegram"></i></a></li>
+                        <li><a href="" class="home-menu_link"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    {% endblock  %}
+    
+    
+</body>
+</html>

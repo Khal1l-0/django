@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+body{
+    font-family: 'Sackers Gothic Std';
+    color:#ffea00e4;    
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.home{
+    background: url(../img/bkg.png) no-repeat center /cover;
+    width: 100%;
+    /* height: 100vh; */
+    /* position: fixed; */
+    padding: 193.5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    align-items: start;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media(max-width:850px){
+    .container{
+        justify-content: center;
+    }
+    .fuck-2{
+        margin-top: 50px;
+    }
+}
+.home-title{
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+.home-form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.form-input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffea00e4 ;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 19px;
+    padding: 10px;
+    color: #fff;
+}
+.form-input::placeholder{
+    color: #ffea00e4;
+    font-family: 'Sackers Gothic Std';
+}
+.home-btn{
+    border: none;
+    padding: 10px;
+    background: #ffea00e4;
+    border: 1px solid #ffea00e4;
+    color: #000;
+    border-radius: 10px;
+    transition: 1s;
+}
+.home-btn:hover{
+    background: none;
+    border: 1px solid #ffea00e4;
+    color: #fff;
+}
+.home-right{
+    background: #ffea00e4;
+    opacity: 0.9;
+    padding: 50px 20px;
+    color: #000;
+    border-radius: 20px 20px 50% 20px;
+}
+.fuck-2{
+    border-radius: 20px 20px 0 20px;
+    border: 2px solid #ffea00e4;
+}
+.home-right_title{
+    font-size: 32px;
+}
+.phone-number,
+.geolocation{
+    font-size: 20px;
+    color: #000;
+    transition: 1s;
+}
+.phone-number:hover{
+    color: #fff;
+}
+.geolocation i{
+    color: red;
+}
+.home-menu{
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 110px;
+    padding: 0;
+}
+.home-menu i{
+    margin: 5px 10px 0 0;
+    font-size: 25px;
+    color: #000;
+    transition: 1s;
+}
+.home-menu i:hover{
+    color: #ffff;
+}
+.thank{
+    background: #ffea00e4;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thank-title{
+    text-align: center;
+}
+span{
+    color: red;
+}
+.fuck{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 1140px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    color: #000;
+}
+.fuck:hover {
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+.thank-home{
+    color: #000;
+    transition: 1s;
+    display: block;
+}
+.thank-home:hover{
+    color: #ffea00e4;
+}
+.thank-home::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ffea00e4;
+    transition: 1s;
+}
+.thank-home:hover::after{
+    content: '';
+    width: 100%;
+}
+
+
