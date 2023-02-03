@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['.pythonanywhere.com', '127.0.0.1:5600']
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     'form',
     'main',
     'fontawesomefree',
